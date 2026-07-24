@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "title": "Monolit Sehpa N°1",
+      "category": "Mobilya",
+      "coverImage": "assets/images/product-monolith.jpg",
+      "galleryImages": ["assets/images/product-monolith.jpg"],
+      "material": "Siyah Mermer & Masif Ahşap",
+      "description": "Ham kütle formunun işlevsel yüzeyle buluştuğu monolitil tasarım.",
+      "price": 14500,
+      "showPrice": true,
+      "inStock": true,
+      "status": "published",
+      "addableToCart": true,
+      "sortOrder": 1
+    }
+  ]
+}
