@@ -1,0 +1,22 @@
+{
+  "brandName": "VALENNOCT",
+  "instagram": "https://www.instagram.com/valennoct?igsh=MXF6empoaXN3MHM1bg%3D%3D&utm_source=qr",
+  "heroDesktop": "assets/images/hero-desktop.jpg",
+  "heroMobile": "assets/images/hero-mobile.jpg",
+  "aboutTitle": "HAKKIMDA",
+  "aboutText": "Mimarlık ve sanat anlayışım; planlı kaos, ikilik ve kontrollü keşif kavramları üzerine kuruludur. Mekânı yalnızca kullanılan bir yapı değil, insanın kendini yeniden tanımladığı katmanlı bir deneyim olarak ele alırım. Parçalanmış geometrileri, beklenmedik boşlukları, güçlü kontrastları ve kırmızı gibi karakteristik renkleri kullanırken estetik anlatıyı işlev, teknik çözüm ve sirkülasyonla bütünleştiririm. Tasarımlarım, düzen ile rastlantı arasındaki gerilimi biçime dönüştüren karanlık, yalın ve özgün bir kimlik taşır.",
+  "workAreas": "Mimarlık, mobilya tasarımı, aksesuar tasarımı, amatör marangozluk ve sanat",
+  "programs": "Rhino, AutoCAD ve yapay zekâ temelli uygulamalar",
+  "foundationYear": "2026",
+  "email": "info@valennoct.com",
+  "linkedIn": "https://linkedin.com",
+  "behance": "https://behance.net",
+  "location": "İstanbul / Türkiye",
+  "phone": "+90 500 000 00 00",
+  "phoneVisible": false,
+  "footerSlogan": "Tasarımcı fikri biçime, biçimi deneyime dönüştürür.",
+  "mainColor": "#FFFFFF",
+  "textColor": "#111111",
+  "accentColor": "#64353C",
+  "shopStatus": "Yakında"
+}
