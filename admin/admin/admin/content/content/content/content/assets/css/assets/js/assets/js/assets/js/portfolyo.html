@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VALENNOCT — Portfolyo</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+
+  <header id="top-banner">
+    <div class="banner-left">
+      <a href="index.html" class="brand-title">VALENNOCT</a>
+    </div>
+  </header>
+
+  <button id="hamburger-fixed" aria-label="Menüyü Aç" aria-expanded="false">
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+  </button>
+
+  <div id="menu-overlay"></div>
+  <nav id="menu-drawer">
+    <div class="menu-motif"><span></span><span></span><span></span></div>
+    <div class="menu-links">
+      <a href="index.html">ANASAYFA</a>
+      <a href="projeler.html">PROJELER</a>
+      <a href="hakkinda.html">HAKKIMDA</a>
+      <a href="portfolyo.html">PORTFOLYO</a>
+      <a href="magaza.html">MAĞAZA</a>
+      <a href="iletisim.html">İLETİŞİM</a>
+    </div>
+  </nav>
+
+  <section class="section-padding" style="margin-top: 60px;">
+    <h1 class="section-title">PORTFOLYO</h1>
+    <div id="portfolio-container" class="portfolio-list">
+      <!-- Dynamic Content -->
+    </div>
+  </section>
+
+  <!-- FULLSCREEN MODAL -->
+  <div id="fullscreen-modal" onclick="closeFullscreen()">
+    <img id="modal-img" src="" alt="Zoomed Portfolio Image">
+  </div>
+
+  <footer>
+    <div class="brand-title">VALENNOCT</div>
+    <p class="footer-copy">© <span id="copy-year">2026</span> VALENNOCT. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/content.js"></script>
+</body>
+</html>
