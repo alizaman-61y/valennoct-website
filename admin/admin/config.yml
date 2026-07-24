@@ -1,0 +1,103 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "site_settings"
+    label: "Site Ayarları"
+    files:
+      - file: "content/site.json"
+        label: "Genel Site Bilgileri"
+        name: "site"
+        fields:
+          - { label: "Marka Adı", name: "brandName", widget: "string", default: "VALENNOCT" }
+          - { label: "Instagram Linki", name: "instagram", widget: "string" }
+          - { label: "Hero Masaüstü Görseli", name: "heroDesktop", widget: "image" }
+          - { label: "Hero Telefon Görseli", name: "heroMobile", widget: "image" }
+          - { label: "Hakkında Başlığı", name: "aboutTitle", widget: "string" }
+          - { label: "Hakkında Metni", name: "aboutText", widget: "markdown" }
+          - { label: "Çalışma Alanları", name: "workAreas", widget: "string" }
+          - { label: "Kullanılan Programlar", name: "programs", widget: "string" }
+          - { label: "Kuruluş Yılı", name: "foundationYear", widget: "string" }
+          - { label: "E-Posta", name: "email", widget: "string" }
+          - { label: "LinkedIn", name: "linkedIn", widget: "string", required: false }
+          - { label: "Behance", name: "behance", widget: "string", required: false }
+          - { label: "Konum", name: "location", widget: "string" }
+          - { label: "Telefon", name: "phone", widget: "string", required: false }
+          - { label: "Telefon Görünürlüğü", name: "phoneVisible", widget: "boolean", default: false }
+          - { label: "Footer Sloganı", name: "footerSlogan", widget: "string" }
+          - { label: "Ana Arka Plan Rengi", name: "mainColor", widget: "color", default: "#FFFFFF" }
+          - { label: "Yazı Rengi", name: "textColor", widget: "color", default: "#111111" }
+          - { label: "Vurgu Rengi", name: "accentColor", widget: "color", default: "#64353C" }
+          - { label: "Mağaza Durumu", name: "shopStatus", widget: "select", options: ["Yakında", "Aktif", "Kapalı"], default: "Yakında" }
+
+  - name: "projects"
+    label: "Projeler"
+    files:
+      - file: "content/projects.json"
+        label: "Proje Listesi"
+        name: "projects_list"
+        fields:
+          - label: "Projeler"
+            name: "items"
+            widget: "list"
+            allow_add: true
+            fields:
+              - { label: "Proje Başlığı", name: "title", widget: "string" }
+              - { label: "Yıl", name: "year", widget: "string" }
+              - { label: "Konum", name: "location", widget: "string" }
+              - { label: "Kategori", name: "category", widget: "string" }
+              - { label: "Kısa Açıklama", name: "shortDesc", widget: "text" }
+              - { label: "Kapak Görseli", name: "coverImage", widget: "image" }
+              - { label: "Galeri Görselleri", name: "galleryImages", widget: "list", field: { label: "Görsel", name: "image", widget: "image" } }
+              - { label: "Proje Sırası", name: "order", widget: "number", value_type: "int" }
+              - { label: "Durum", name: "status", widget: "select", options: ["published", "draft"], default: "published" }
+              - { label: "Yeni Sekmede Aç", name: "openInNewTab", widget: "boolean", default: false }
+
+  - name: "products"
+    label: "Ürünler"
+    files:
+      - file: "content/products.json"
+        label: "Ürün Listesi"
+        name: "products_list"
+        fields:
+          - label: "Ürünler"
+            name: "items"
+            widget: "list"
+            allow_add: true
+            fields:
+              - { label: "Ürün Adı", name: "title", widget: "string" }
+              - { label: "Kategori", name: "category", widget: "select", options: ["Mobilya", "Aydınlatma", "Ürün Tasarımı", "Grafik Çalışmalar", "Sanatsal Üretimler"] }
+              - { label: "Kapak Görseli", name: "coverImage", widget: "image" }
+              - { label: "Galeri Görselleri", name: "galleryImages", widget: "list", field: { label: "Görsel", name: "image", widget: "image" } }
+              - { label: "Malzeme", name: "material", widget: "string" }
+              - { label: "Açıklama", name: "description", widget: "text" }
+              - { label: "Fiyat (TL)", name: "price", widget: "number", value_type: "float" }
+              - { label: "Fiyatı Göster", name: "showPrice", widget: "boolean", default: true }
+              - { label: "Stokta", name: "inStock", widget: "boolean", default: true }
+              - { label: "Durum", name: "status", widget: "select", options: ["published", "draft"], default: "published" }
+              - { label: "Sepete Eklenebilir", name: "addableToCart", widget: "boolean", default: true }
+              - { label: "Sıralama Değeri", name: "sortOrder", widget: "number", value_type: "int" }
+
+  - name: "portfolio"
+    label: "Portfolyo"
+    files:
+      - file: "content/portfolio.json"
+        label: "Portfolyo Listesi"
+        name: "portfolio_list"
+        fields:
+          - label: "Portfolyo Sayfaları"
+            name: "items"
+            widget: "list"
+            allow_add: true
+            fields:
+              - { label: "Proje Numarası", name: "projectNo", widget: "string" }
+              - { label: "Proje Adı", name: "title", widget: "string" }
+              - { label: "Kapak Görseli", name: "coverImage", widget: "image" }
+              - { label: "Sayfa Görselleri", name: "pageImages", widget: "list", field: { label: "Görsel", name: "image", widget: "image" } }
+              - { label: "Sayfa Sıralaması", name: "pageOrder", widget: "number", value_type: "int" }
+              - { label: "İki Parçalı Defter Görünümü", name: "isSpreading", widget: "boolean", default: false }
+              - { label: "Tam Ekran Açılma", name: "allowFullscreen", widget: "boolean", default: true }
