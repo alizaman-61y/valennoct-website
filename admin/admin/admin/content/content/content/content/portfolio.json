@@ -1,0 +1,27 @@
+{
+  "items": [
+    {
+      "projectNo": "01",
+      "title": "FRAGMENTARIUM ARCHIVE",
+      "coverImage": "assets/images/fragmentarium-cover.jpg",
+      "pageImages": [
+        "assets/images/portfolio-page1.jpg",
+        "assets/images/portfolio-page2.jpg"
+      ],
+      "pageOrder": 1,
+      "isSpreading": true,
+      "allowFullscreen": true
+    },
+    {
+      "projectNo": "02",
+      "title": "KINETIC VOID",
+      "coverImage": "assets/images/hero-desktop.jpg",
+      "pageImages": [
+        "assets/images/hero-desktop.jpg"
+      ],
+      "pageOrder": 2,
+      "isSpreading": false,
+      "allowFullscreen": true
+    }
+  ]
+}
