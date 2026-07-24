@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "title": "FRAGMENTARIUM",
+      "year": "2026",
+      "location": "Heybeliada",
+      "category": "Mimarlık & Deneysel Tasarım",
+      "shortDesc": "Parçalanmış geometriler ve zıt materyal deneyimleri üzerine kurulu ada projesi.",
+      "coverImage": "assets/images/fragmentarium-cover.jpg",
+      "galleryImages": [
+        "assets/images/fragmentarium-1.jpg",
+        "assets/images/fragmentarium-2.jpg"
+      ],
+      "order": 1,
+      "status": "published",
+      "openInNewTab": false
+    }
+  ]
+}
